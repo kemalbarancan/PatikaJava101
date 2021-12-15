@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args) {
+
+        int aci,r;
+        float pi = 3.14f;
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Merkez acının ölçüsünü giriniz: ");
+        aci = inp.nextInt();
+        System.out.println("Yarıcapı giriniz: ");
+        r = inp.nextInt();
+        float alan = (pi * (r*r) * aci) /360;
+
+        System.out.println("Dairenin alanı: "+alan);
+
+
+
+    }
+}
