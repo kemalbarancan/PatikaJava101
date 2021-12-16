@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args) {
+
+        // Kilo (kg) / Boy(m) * Boy(m)
+        int kilo;
+        float boy;
+        float endeks;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Kilonuzu giriniz: ");
+        kilo = input.nextInt();
+
+        System.out.println("Boyunuzu giriniz: ");
+        boy = input.nextFloat();
+
+        endeks = kilo / (boy*boy);
+        System.out.println("Vücut kile endeksiniz: " +endeks);
+    }
+}
