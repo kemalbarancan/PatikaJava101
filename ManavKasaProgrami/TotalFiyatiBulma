@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args) {
+
+        /*
+        Armut : 2,14 TL
+        Elma : 3,67 TL
+        Domates : 1,11 TL
+        Muz: 0,95 TL
+        Patlıcan : 5,00 TL */
+
+        float armut = 2.14f;
+        float elma = 3.67f;
+        float domates = 1.11f;
+        float muz = 0.95f;
+        float patlican = 5f;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("Ne kadar armut almak istiyorsunuz?");
+        int armutkg = inp.nextInt();
+        System.out.println("Ne kadar elma almak istiyorsunuz?");
+        int elmakg= inp.nextInt();
+        System.out.println("Ne kadar domates almak istiyorsunuz?");
+        int domateskg =  inp.nextInt();
+        System.out.println("Ne kadar muz almak istiyorsunuz?");
+        int muzkg =  inp.nextInt();
+        System.out.println("Ne kadar patlıcan almak istiyorsunuz?");
+        int patlicankg =  inp.nextInt();
+
+        float total = armut * armutkg + elma * elmakg + domates * domateskg + muz * muzkg + patlican * patlicankg;
+        System.out.println("Toplam ödemeniz gereken tutar: "+total);
+
+    }
+}
