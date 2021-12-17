@@ -1,0 +1,129 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        String burc = "";
+
+        System.out.print("Doğduğunuz Ayı Girin(Sayı İle): ");
+        int month = inp.nextInt();
+
+        System.out.print("Doğduğunuz Günü Girin: ");
+        int day = inp.nextInt();
+        
+        if((month > 12) || (month < 1)) {
+            burc = "Hatalı Giriş Yaptınız";
+        }
+        if (month == 1) {
+            if ((day >= 22) && !(day > 31)) {
+                burc = "Kova Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Oğlak Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 2) {
+            if ((day >= 20) && !(day > 28)) {
+                burc = "Balık Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Kova Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 3) {
+            if ((day >= 21) && !(day > 31)) {
+                burc = "Koç Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Balık Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 4) {
+            if ((day >= 21) && !(day > 30)) {
+                burc = "Boğa Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Koç Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 5) {
+            if ((day >= 21) && !(day > 31)) {
+                burc = "İkizler Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Boğa Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 6) {
+            if ((day >= 21) && !(day > 30)) {
+                burc = "Yengeç Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "İkizler Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 7) {
+            if ((day >= 21) && !(day > 31)) {
+                burc = "Aslan Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Yengeç Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 8) {
+            if ((day >= 21) && !(day > 31)) {
+                burc = "Başak Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Aslan Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 9) {
+            if ((day >= 21) && !(day > 30)) {
+                burc = "Terazi Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Başak Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 10) {
+            if ((day >= 21) && !(day > 31)) {
+                burc = "Yay Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Terazi Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 11) {
+            if ((day >= 21) && !(day > 30)) {
+                burc = "Akrep Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Yay Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        if (month == 12) {
+            if ((day >= 21) && !(day > 31)) {
+                burc = "Oğlak Burcu";
+            } else if (day < 21 && day > 0) {
+                burc = "Akrep Burcu";
+            }else {
+                burc = "Hatalı Giriş Yaptınız.";
+            }
+        }
+        
+        
+        System.out.print("Burcunuz: " + burc);
+    }
+}
