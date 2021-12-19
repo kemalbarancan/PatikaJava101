@@ -1,0 +1,17 @@
+    import java.util.Scanner;
+    public class Test {
+        public static void main(String[] args) {
+
+            Scanner input = new Scanner(System.in);
+            int n;
+            System.out.println("Sayiyi giriniz: ");
+            n= input.nextInt();
+            int total=0;
+            
+            while(n!=0){
+                total = (n%10)+total;
+                n/=10;
+            }
+            System.out.println(total);
+        }
+    }
