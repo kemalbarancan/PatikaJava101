@@ -1,0 +1,21 @@
+public class Test {
+    public static void main(String[] args) {
+        
+        int counter;
+        int s=0;
+
+        for(int i=2;i<=100;i++){
+             s=0;
+            for(counter=2;counter<i;counter++){
+                if(i%counter==0){
+                    s++;
+                    break;
+                }
+            }
+            if(s==0)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+}
