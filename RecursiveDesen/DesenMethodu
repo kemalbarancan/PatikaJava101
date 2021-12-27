@@ -1,0 +1,30 @@
+
+import java.util.Scanner;
+
+public class Test {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz  : ");
+        int x=scanner.nextInt();
+        int y = x;
+        decrease(x, y);
+    }
+    
+    static void decrease(int x, int y) {
+        System.out.print(x + " ");
+        if (x == 0 || x < 0) {
+            increase(x + 5, y);
+        } else {
+            decrease(x - 5, y);
+        }
+    }
+    static void increase(int x, int y) {
+        System.out.print(x + " ");
+        if (x == y) {
+            return;
+        } else {
+            increase(x + 5, y);
+        }
+    }
+}
