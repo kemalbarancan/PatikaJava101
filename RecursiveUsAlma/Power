@@ -1,0 +1,22 @@
+
+import java.util.Scanner;
+
+public class Test {
+
+    public static void pow(int a,int b){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Taban değeri giriniz :");
+        int taban = scan.nextInt();
+        System.out.println("Üs değerini giriniz :");
+        int us = scan.nextInt();
+        int result = 1;
+        for(int i = 1;i<=us;i++){
+            result*=taban;
+        }
+        System.out.println(result);
+    }
+
+    public static void main(String[] args) {
+        pow(3,4);
+    }
+}
