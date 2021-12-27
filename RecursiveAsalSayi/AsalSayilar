@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+
+public class Test {
+
+    public static void asal(int n){
+
+        int s=0;
+        for(int counter=2; counter<n;counter++){
+            if(n%counter == 0){
+                System.out.println(+n+" sayısı asal değildir.");
+                s++;
+                break;
+            }
+        }
+        if(s==0){
+            System.out.println(+n+ " sayısı asaldır");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Sayıyı giriniz: ");
+        int sayi = scan.nextInt();
+
+        asal(sayi);
+    }
+}
